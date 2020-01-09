@@ -1,0 +1,142 @@
+body{
+	font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Nunito', sans-serif;
+}
+#foto{
+	background: url('../images/propuesta/huguidugui.jpg');
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 282px;
+}
+
+.filas{
+  padding: 30px 40px 30px 40px;
+  color: #cce911;
+}
+
+.gris_claro{
+  background: #58306f;
+}
+
+.gris_oscuro{
+  background: #542c6b;
+}
+
+.icono i{
+  font-size: 1.8em
+}
+
+#tab1{
+  background: #3498db;
+}
+
+#tab1 a, #tab2 a, #tab3 a{
+	padding: 35px 0;
+}
+
+#tab2{
+  background: #e67e22;
+}
+
+#tab3{
+  background: #9b59b6;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+  color: #ddd;
+  cursor: default;
+  background: none !important;
+  border: none !important;
+}
+.nav-tabs > li > a{
+  border: none !important;
+  color: #101015;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+  border: none !important;
+  background: none !important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+  color: #fff;
+  -moz-transition: all .3s ease-in;
+   -o-transition: all .3s ease-in;
+   -webkit-transition: all .3s ease-in;
+   transition: all .3s ease-in;
+}
+
+.oportunidades{
+		float: left;
+		background: #3498db;
+		padding: 20px 0;
+}
+
+.maqueta{
+		float: left;
+	background: #e67e22;
+	padding: 20px 0;
+
+}
+
+.contacto{
+		float: left;
+	background: #9b59b6;
+	padding: 20px 0;
+}
+
+.tab-content{
+	min-height: 500px;
+	border: 1px solid rgba(89, 46, 111, 0.5);
+	background: rgba(73, 111, 240, 0.2);
+}
+
+.title-area{
+		text-align: left;
+		padding: 0 60px;
+}
+
+.title-area p{
+	margin: 0;
+}
+
+.title{
+	padding: 0;
+}
+
+#feature{
+	padding: 0;
+}
+
+.feature-content{
+	margin-top: 0;
+}
+/* TAMAÑO XS*/
+@media (max-width: 767px) {
+
+	#tab1, #tab2, #tab3{
+		font-size: 11px;
+	}
+
+	.title-area{
+		padding: 0 10px;
+	}
+}
+
+/* TAMAÑO SM */
+@media (min-width:768px){
+
+}
+
+/* TAMAÑO MD */
+@media (min-width:992px){
+
+}
+
+/* TAMAÑO LG */
+@media (min-width:1200px){
+
+}

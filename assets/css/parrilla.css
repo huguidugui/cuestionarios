@@ -1,0 +1,23 @@
+body{font-family: Helvetica; font-size: 12px;}
+@page { margin-top: 100px; margin-left: 25px; margin-right: 25px; margin-bottom: 80px;}
+header { position: fixed; top: -90px; left: 0px; right: 0px; height: 50px;  border-top: 3px solid #0c0; border-bottom: 3px solid #0c0; }
+footer { position: fixed; bottom: -60px; left: 0px; right: 0px; border-top: 3px solid #333; background-color: #ffd; height: 50px; }
+
+#fila{margin: 15px 0;}
+#header_logo{ width: 70px; border: 0; text-align: center;}
+#logo{width: 35px;}
+#header_texto{text-align: center;  border: 0; width: 685px;}
+#header_logos{ text-align: center; border: 0; width: 150px;}
+#logo1, #logo2{width: 50px;}
+
+#itemImagen{width: 150px;}
+
+
+#td-fecha{width: 120px; text-align: center;}
+#td-texto{width: 400px;}
+#td-imagen{text-align: center;}
+#footer_texto{text-align: center; font-size: 9px; font-weight: bold;}
+
+#texto_main{margin-top: 25px; text-align: justify;}
+
+#table_info{width: 100%;}

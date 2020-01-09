@@ -1,0 +1,98 @@
+body,html{
+
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	overflow-x: hidden !important;
+	color: #fed189;
+  background: url('../../assets/images/purple-background.jpg');
+}
+
+
+a{
+	text-decoration: none;
+	color: #2f2f2f;
+}
+
+a:focus{
+	outline: none;
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	margin: 0;
+}
+
+img{
+ border:none;
+}
+
+
+#login-form{
+  background: #234c0b;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.title-area {
+  display: inline;
+  float: left;
+  padding: 10px 100px;
+  text-align: center;
+  width: 100%;
+}
+
+.title-area .title {
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 35px;
+  color: #cee911;
+}
+
+
+
+
+
+/*======================///////////////
+			START RESPONSIVE STYLE
+=====================///////////////////////*/
+
+
+@media(max-width:1199px ){
+	
+}
+
+
+@media(max-width:991px ){
+	
+}
+
+/* Tamaño XS */
+@media(max-width:767px ){
+   
+}
+
+@media(max-width:640px ){
+
+}
+
+
+@media(max-width:360px ){
+  
+
+}
+
+
+@media(max-width:320px ){
+	
+}

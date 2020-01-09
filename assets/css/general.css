@@ -1,0 +1,154 @@
+body{
+
+font-family: 'Reem Kufi', sans-serif;
+
+    background: #e2f1fb;
+    color: #000;
+    font-size: 16px;
+}
+
+.miHeader{
+    background: #3a2820;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 3px solid #ececc9;
+    color: #fff;
+}
+
+.topHeader{
+  background: #3a2820;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.plecaAzul{
+  border-top: 40px solid #3a2820;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+  color: #000 !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #fff !important;
+}
+
+.estilos h4{
+    margin: 0;
+    color: #fff;
+}
+
+a{color: #371b63}
+
+p, h1, h2, h4{padding: 8px;}
+
+.footer-box{padding: 12px;}
+
+.navbar .navbar-nav {display: inline-block; float: none; vertical-align: top;}
+.navbar-brand{height: auto;  padding: 5px 15px;}
+
+.navbar .navbar-collapse {text-align: center;}
+.huguidugui{
+    background: #3a2820 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff !important;
+    font-size: 16px;
+    margin-left: 30%;
+    margin-top: 8px;
+}
+
+.paddingCuadros{padding: 0 5px; border-radius: 5px;}
+.borderRadius{ background: #fff none repeat scroll 0 0; border-radius: 5px;}
+.sombra{
+  -webkit-box-shadow: 0 0px 6px -5px rgba(256, 256, 256, 1);
+  -moz-box-shadow: 0 0px 6px -5px rgba(256, 256, 256, 1);
+  box-shadow: 0 0px 6px -5px rgba(256, 256, 256, 1);
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{
+    background: #3a2820 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff !important;
+    font-size: 16px;
+}
+
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{background: none;}
+.navbar-default{background: none; border-color: none; border: none;}
+.navbar-default .navbar-nav > li > a{
+    border-radius: 5px;
+    color: #2d2d2d;
+    font-size: 16px;
+    margin: 9px 0;
+    padding: 5px 16px;
+}
+.navbar-default .navbar-nav > li > a > i{margin-right: 4px;}
+.navbar-default .navbar-nav > li {margin: 0 3px;}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus, .activeMenu {background: #3a2820 !important; color: #fff !important;}
+.pdaHome{min-height: 433px}
+.footerDiv{padding-left: 0px; padding-right: 5px;}
+
+.containerMenu{
+  background: #ececc9;
+
+}
+
+.estilosFooter{
+    background: #fff none repeat scroll 0 0;
+    border-radius: 5px;
+}
+
+
+/*page preloader*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #229fbc;
+  z-index: 13000;
+  height: 100%;
+}
+
+.preloader_image {
+  width: 169px;
+  height: 124px;
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  background: url(../images/huguidugui_header.gif) no-repeat 50% 50% transparent;
+  margin: -50px 0 0 -50px;
+}
+
+ul li a i{
+  margin-right: 5px;
+}
+
+/* TAMAÑO XS*/
+@media (max-width: 767px) {
+  .navbar-nav{width: 96%}
+  .estilosFooter{margin-bottom: 8px !important;}
+  .mianimacion, .paddingResponsive{padding: 0 10px !important;}
+  .pdaHome{min-height: 10px;}
+
+  .footerDiv{padding-left: 9px; padding-right: 9px;}
+}
+
+/* TAMAÑO SM */
+@media (min-width:768px){
+    .pdaHome{min-height: 279px;}
+}
+
+/* TAMAÑO MD */
+@media (min-width:992px){
+  .pdaHome{min-height: 360px;}
+
+}
+
+/* TAMAÑO LG */
+@media (min-width:1200px){
+  .pdaHome{min-height: 437px;}
+}
