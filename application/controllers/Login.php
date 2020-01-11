@@ -22,7 +22,7 @@ class Login extends CI_Controller {
 		} else {
 			$data['titulo'] = 'Cuestionarios | login al sistema';
 			$this->load->view('headfoot/headerLogin', $data);
-			//$this->load->view('templates/login/login');
+			$this->load->view('templates/login/login');
 			$this->load->view('headfoot/footerLogin');
 		}
 	}
