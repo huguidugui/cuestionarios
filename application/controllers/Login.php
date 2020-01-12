@@ -6,7 +6,7 @@ class Login extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->library('session');
-		$this->load->model('user');
+		$this->load->model('login_model');
 	}
 
 	public function index()
@@ -20,7 +20,7 @@ class Login extends CI_Controller {
 				break;
 			}
 		} else {
-			$data['titulo'] = 'Cuestionarios | login al sistema';
+			$data['titulo'] = 'Cuestionarios | Login al sistema';
 			$this->load->view('headfoot/headerLogin', $data);
 			$this->load->view('templates/login/login');
 			$this->load->view('headfoot/footerLogin');
@@ -40,7 +40,7 @@ class Login extends CI_Controller {
 			$username = trim($this->input->post('username'));
 			$password = md5(trim($this->input->post('password')));
 
-			$result = $this->user->login_check($username, $password);
+			$result = $this->login_model->login_check($username, $password);
 
 			if($result){
 				$sess_array = array();
@@ -63,7 +63,7 @@ class Login extends CI_Controller {
 				}
 
 			} else {
-				$this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Username o password incorrecto!</div>');
+				$this->session->set_flashdata('msg', '<div style="font-size: 0.9em" class="alert alert-danger text-center">Usuario o Contraseña incorrecto!</div>');
 				$data['titulo'] = 'Cuestionarios | login al sistema';
 				$this->load->view('headfoot/headerLogin', $data);
 				$this->load->view('templates/login/login');
