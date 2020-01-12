@@ -15,7 +15,7 @@
             	<?php echo form_error('password');?>
             </div>
             
-            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
 
             <div class="form-group">
 				<?php echo $this->session->flashdata('msg'); ?>
