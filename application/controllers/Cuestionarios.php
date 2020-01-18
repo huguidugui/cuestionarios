@@ -20,13 +20,7 @@ class Cuestionarios extends CI_Controller {
         	echo "Estás dentro del sistema";
         	echo "<a href=". base_url('login/logout') . ">Salir</a>";
         }
-        
-
-
-
 	
 	}
 
-	
-
-} //Fin Clase
+} //Fin Cuestionarios

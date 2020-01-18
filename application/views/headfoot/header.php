@@ -2,27 +2,82 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 	<head>
         <title><?= $titulo?></title>
         <meta charset="utf-8">
-		<meta name="description" content="Sitio personal, CV y blog. Recopilación variada de útiles ejemplos sobre programación web con PHP">
-		<meta name="keywords" content="HTML,CSS,HTML,JavaScript,JQuery,CodeIgniter,programacion php, PHP,bootstrap, Hugo Martínez">
+		<!-- <meta name="description" content="<?php echo isset($descripcion_seo) ? $descripcion_seo : ''?>">
+		<meta name="keywords" content="<?php echo isset($tags_seo) ? $tags_seo : ''?>"> -->
 		<meta name="author" content="Hugui Dugui">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-		
+		<!-- Open Graph data -->
+	    <!-- <meta property="og:title" content="Cuestionarios" />
+	    <meta property="og:type" content="aplicación web" />
+	    <meta property="og:image" content="<?php echo base_url();?>assets/images/cuestionarios.jpg" />
+	    <meta property="og:description" content="Aplicación de cuestionarios" />
+	    <meta property="og:site_name" content="Cuestionarios" /> -->
+        
+
         <link rel="icon" href="<?php echo base_url();?>assets/images/hugui.ico" type="image/icon">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/bootstrap4/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/slick.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/animate.css">
- 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/all-skins.min.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/swal.min.css">
- 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/font-awesome.css">
- 		
- 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/Ionicons/css/ionicons.min.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/dist/css/AdminLTE.min.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/custom.css?ver=1.0">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/bootstrap-progressbar-3.3.4.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/theme-color/purple-theme.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/custom.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/cuestionario.css?ver=1.0">
+		
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	</head>
 
-	<body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
+	<body>
+	
+		<!-- SCROLL TOP BUTTON -->
+		<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+		<!-- END SCROLL TOP BUTTON -->
+
+		<!-- BEGIN MENU -->
+		<section id="menu-area">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- IMG BASED LOGO  -->
+		 				<a class="navbar-brand img-responsive" href="<?php echo base_url()?>">
+							<img src="<?php echo base_url();?>assets/images/huguidugui_logo.png" alt="huguidugui" width="167" height="45">
+						</a> 
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+							<li class="active">
+								<a href="<?php echo base_url()?>">
+									Inicio
+								</a>
+							</li>
+							<?php
+            					if($this->session->userdata('ci_session')) {
+            				?>
+	            				<li>
+									<a href="<?php echo base_url()?>login/logout">
+										Salir
+									</a>
+								</li>
+							<?php } ?>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</nav>
+		</section>
+		<!-- END MENU -->
+
+

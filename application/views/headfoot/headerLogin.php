@@ -17,4 +17,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/style-login.css?ver=1.2">
 	</head>
 
-	<body>
+	<body class="d-flex align-items-center">
