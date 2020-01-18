@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
         <link rel="icon" href="<?php echo base_url();?>assets/images/hugui.ico" type="image/icon">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/bootstrap4/bootstrap.min.css">
- 		<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/style-login.css"> -->
+ 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/style-login.css?ver=1.2">
 	</head>
 
-	<body>
+	<body class="d-flex align-items-center">
