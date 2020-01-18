@@ -7,16 +7,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<head>
         <title><?= $titulo?></title>
         <meta charset="utf-8">
-		<!-- <meta name="description" content="<?php echo isset($descripcion_seo) ? $descripcion_seo : ''?>">
-		<meta name="keywords" content="<?php echo isset($tags_seo) ? $tags_seo : ''?>"> -->
+		<meta name="description" content="Aplicativo de cuestionarios de opción múltiple. Aplicación Web hecha con Codeigniter 3.1.x.">
+		<meta name="keywords" content="cuestionarios, cuestionarios de opcion multiple">
 		<meta name="author" content="Hugui Dugui">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-		<!-- Open Graph data -->
-	    <!-- <meta property="og:title" content="Cuestionarios" />
-	    <meta property="og:type" content="aplicación web" />
-	    <meta property="og:image" content="<?php echo base_url();?>assets/images/cuestionarios.jpg" />
-	    <meta property="og:description" content="Aplicación de cuestionarios" />
-	    <meta property="og:site_name" content="Cuestionarios" /> -->
         
 
         <link rel="icon" href="<?php echo base_url();?>assets/images/hugui.ico" type="image/icon">
