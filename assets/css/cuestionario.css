@@ -1,0 +1,117 @@
+.cadaPregunta{
+    background: #eee none repeat scroll 0 0;
+    border-bottom: 1px solid #3bc;
+    margin-bottom: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cuadroIzquierda{
+  padding: 0 10px 0 0;
+}
+
+.cuadroDerecha{
+   padding: 0 0 0 10px;
+}
+
+.hola{
+  background:#ececec;
+  margin-bottom: 8px;
+}
+
+.hola2{
+  background:#ececec;
+}
+
+.colorEfecto{
+  background-color: #7fffff;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.imagen{
+  width: 100px;
+  padding: 10px 0;
+}
+
+
+.radio-inline:hover{
+  color: #520cde;
+}
+
+.pregunta-sola{
+  background: #6a4b90;
+  border-radius: 10px 10px 0 0;
+  padding: 12px;
+  color: #ddd;
+}
+
+
+.error-faltantes{
+   background: #d2402c !important;
+   color: #eee !important;
+}
+
+.error-faltantes-input{
+  border: 1px solid red !important;
+}
+
+.alinear{
+  padding: 5px;
+}
+
+
+.correctas{
+  background: #3c763d;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  font-size: 22px;
+}
+
+.incorrectas{
+  background: #a94442;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  font-size: 22px;
+}
+
+.back-evaluados{
+  background: #eee;
+  padding: 10px;
+}
+
+.evaluacion-pregunta{
+  background: #6a4b90;
+  padding: 10px;
+  color: #eee;
+}
+
+.single-team-member {
+    min-height: 100px !important;
+}
+
+.team-member-link{
+  background: unset;
+}
+.team-member-name p {
+    color: #222;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+}
+/* TAMAÑO XS*/
+@media (max-width: 767px) {
+  .alinear .radio-inline{margin: 3px 0 !important;}
+
+  .cuadroDerecha, .cuadroIzquierda{
+    padding: 0;
+  }
+
+  .incorrectas{
+    margin-top: 15px;
+  }
+}

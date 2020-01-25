@@ -14,14 +14,17 @@ class Cuestionarios extends CI_Controller {
         }
 	}
 	
-
+	/*
+	* Muestra los cuestionarios
+	*/
 	public function index()
 	{
 		$data['titulo'] = 'Cuestionarios';
 		$data['sesion'] = $this->data_session;
   
 		$this->load->view('headfoot/header', $data);
-		$this->load->view('templates/mostrar_cuestionarios', $data);
+		$this->load->view('headfoot/menu');
+		$this->load->view('templates/mostrar_cuestionarios');
 		$this->load->view('headfoot/footer');
 
 
