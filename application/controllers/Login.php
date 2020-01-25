@@ -9,6 +9,10 @@ class Login extends CI_Controller {
 		$this->load->model('login_model');
 	}
 
+	/*
+	* Login es controlador por defecto, seteado en config/routes.php
+	* Muestra formulario de logueo
+	*/
 	public function index()
 	{
 		if($this->session->userdata('ci_session')) {
@@ -27,6 +31,12 @@ class Login extends CI_Controller {
 		}
 	}
 
+	/*
+	* Lógica para entrar al sistema, checa usuario y contraseña
+	* 1. Checa formulario que tenga los datos validados
+	* 2. Si todo es ok, entra a verificar usuario y contraseña en BD
+	* 3. Si son correctos, redirige a controlador Cuestionarios, en caso contrario a Login
+	*/
 	public function login(){
 		$this->form_validation->set_rules('username', 'Usuario', 'required|min_length[4]');
 		$this->form_validation->set_rules('password', 'Constraseña', 'required');
@@ -73,7 +83,12 @@ class Login extends CI_Controller {
 
 	}
 
-	public function logout(){
+	
+	/*
+	*	Destruye la session
+	*/
+	public function logout()
+	{
 		$this->session->unset_userdata('ci_session');
 	   	session_destroy();
 	   	redirect(base_url().'login');
