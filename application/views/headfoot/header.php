@@ -20,11 +20,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/slick.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/animate.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/bootstrap-progressbar-3.3.4.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/theme-color/purple-theme.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/theme-color/purple-theme.css?ver=<?php echo time();?>">
 
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/style.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/custom.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/cuestionario.css?ver=1.0">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/custom.css?ver=<?php echo time();?>">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/cuestionario.css?ver=<?php echo time();?>">
 		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>

@@ -30,6 +30,10 @@
     background: none !important;
 }
 
+.title {
+    padding-bottom: 0;
+}
+
 /* TAMAÑO XS*/
 @media (max-width: 767px) {
   #registrar{
