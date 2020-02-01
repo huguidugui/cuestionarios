@@ -5,7 +5,7 @@ class Login extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		$this->load->library('session');
+		// Library 'session' se carga globalmente desde autoload.php 
 		$this->load->model('login_model');
 	}
 
