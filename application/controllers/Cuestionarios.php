@@ -18,7 +18,7 @@ class Cuestionarios extends CI_Controller
 	}
 	
 	/*
-	* Muestra los cuestionarios
+	* Muestra los cuestionarios para elgir
 	*/
 	public function index()
 	{
@@ -39,5 +39,35 @@ class Cuestionarios extends CI_Controller
 		$this->load->view('headfoot/footer');
 	
 	} //index
+
+	/*
+	* Muestra las preguntas del cuestionario
+	*/
+	public function ver_preguntas($id, $nombre)
+	{
+		// Verbos_model -> obtener recibe:
+		// $tabla = '',
+		// $campos = array(),
+		// $where = array(), 
+		// $columnOrder = '', 
+		// $order = 'ASC', 
+		// $start = 0, 
+		// $end = 0
+		$data['allPreguntas'] = $this->Verbos_model->obtener( 
+															 'preguntas', 
+															 array('id', 'pregunta', 'resp_1', 'resp_2', 'resp_3', 'correcta'), 
+															 array('fk_id_tema' => $id), 
+															 '', 
+															 '', 
+															 0, 
+															 0 
+															);
+		$data['lenguaje'] = $id;
+		$data['titulo'] = "Preguntas";
+		$data['nombreCuestionario'] = $nombre;
+		$this->load->view('headfoot/header', $data);
+		$this->load->view('templates/cuestionario');
+		$this->load->view('headfoot/footer');
+	}
 
 } //Fin Cuestionarios
