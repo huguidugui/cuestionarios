@@ -39,6 +39,9 @@
   #registrar{
     padding: 13px 0;
   }
+  .our-team-content-custom{
+    margin-top: 0;
+  }
 }
 
 /* TAMAÑO SM */
@@ -52,5 +55,7 @@
 
 /* TAMAÑO LG */
 @media (min-width:1200px){
-
+    .mostrar-cuestionarios {
+        min-height: 500px;
+    }
 }

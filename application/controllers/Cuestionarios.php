@@ -66,6 +66,7 @@ class Cuestionarios extends CI_Controller
 		$data['titulo'] = "Preguntas";
 		$data['nombreCuestionario'] = $nombre;
 		$this->load->view('headfoot/header', $data);
+		$this->load->view('headfoot/menu');
 		$this->load->view('templates/cuestionario');
 		$this->load->view('headfoot/footer');
 	}

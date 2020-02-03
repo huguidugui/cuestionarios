@@ -1,4 +1,4 @@
-<section id="our-team">
+<section id="our-team" class="mostrar-cuestionarios">
    <div class="container">
       <div class="row">
          <div class="col-md-12">
@@ -9,7 +9,7 @@
             </div>
          </div>
          <div class="col-md-12">
-            <div class="our-team-content">
+            <div class="our-team-content our-team-content-custom">
                <div class="row">
                   <?php foreach($cuestionarios as $cuestionario) { ?>
                   <div class="col-md-4 col-sm-6 col-xs-12">
