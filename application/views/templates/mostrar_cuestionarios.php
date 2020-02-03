@@ -18,7 +18,7 @@
                            <p><?php echo $cuestionario->tema;?></p>
                         </div>
                         <div class="team-member-link">
-                           <a href="<?php echo base_url();?>preguntas/ver_preguntas/<?php echo $cuestionario->id;?>/<?php echo $cuestionario->tema;?>">
+                           <a href="<?php echo base_url();?>cuestionarios/ver_preguntas/<?php echo $cuestionario->id;?>/<?php echo $cuestionario->tema;?>">
                            <button class="btn btn-info col-xs-12 col-lg-12 ">
                            Hacer cuestionario
                            </button>
