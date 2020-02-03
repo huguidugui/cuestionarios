@@ -34,10 +34,17 @@
     padding-bottom: 0;
 }
 
+#listarPreguntas{
+    margin-top: 20px;
+}
+
 /* TAMAÑO XS*/
 @media (max-width: 767px) {
   #registrar{
     padding: 13px 0;
+  }
+  .our-team-content-custom{
+    margin-top: 0;
   }
 }
 
@@ -52,5 +59,7 @@
 
 /* TAMAÑO LG */
 @media (min-width:1200px){
-
+    .mostrar-cuestionarios {
+        min-height: 450px;
+    }
 }

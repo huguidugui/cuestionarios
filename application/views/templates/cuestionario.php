@@ -8,14 +8,13 @@
             Cuestionario: <?php echo $nombreCuestionario;?>
           </h2>
           <span class="line"></span>
-          <p>Lee con atención cada pregunta y elige una respuesta.</p>
         </div>
       </div>
     </div> <!-- /row -->
 
     <div class="row">
       <div class="col-md-12">
-        <form style="padding: 0 15px;" role="form" action="<?php echo base_url();?>preguntas/evaluar" method="post" id="listarPreguntas">
+        <form id="listarPreguntas" action="<?php echo base_url();?>preguntas/evaluar" method="post" role="form">
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
