@@ -20,5 +20,5 @@ D. Calificación de cuestionario
 
 A. Login
 
-![Login para entrar al sistema de cuestionarios](screenshots/login_sistema_cuestionarios.png)
+![Login para entrar al sistema de cuestionarios](screenshots/login_sistema_cuestionarios2.png)
 
