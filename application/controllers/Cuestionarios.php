@@ -71,4 +71,62 @@ class Cuestionarios extends CI_Controller
 		$this->load->view('headfoot/footer');
 	}
 
+	public function evaluar()
+	{
+		$data_session = $this->session->userdata('ci_session');
+        $correoAdmin = $data_session['correo'];
+		$objeto = $_POST;
+		$datos['candidato'] = $objeto['candidato'];
+		$emailCandidato = $objeto['emailCandidato'];
+		$datos['nombreCuestionario'] = $objeto['nombreCuestionario'];
+		//Se ontienen del _POST y se quitan para que quedarse solo con los input radio
+		//Con esto ya se pueden evaluar
+		unset($objeto['candidato']);
+		unset($objeto['nombreCuestionario']);
+		unset($objeto['emailCandidato']);
+
+		$idRespCorrectas   = array();
+		$idRespIncorrectas = array();
+		$data['respCorrectasFromUser'] = array();
+		$data['respIncorrectasFromUser'] = array();
+
+		foreach ($objeto as $key => $value) {
+ 			$idPregunta = str_replace("optradio_", "", $key);
+			$respuestaBD = $this->Preguntas_model->getCorrectAnswer($idPregunta);
+
+			if($respuestaBD->correcta == $value){
+				$idRespCorrectas[] = $respuestaBD->id;
+				$data['respCorrectasFromUser'][] = $value;
+			}else{
+				$idRespIncorrectas[] = $respuestaBD->id;
+				$data['respIncorrectasFromUser'][] = $value;
+			}
+		}
+
+		$data['numCorrectas']   = count($idRespCorrectas);
+ 		$data['numIncorrectas'] = count($idRespIncorrectas);
+		$data['preguntasCorrectas'] = $this->Preguntas_model->getPreguntasCorrectas($idRespCorrectas, $data['respCorrectasFromUser']);
+		$data['preguntasIncorrectas'] = $this->Preguntas_model->getPreguntasIncorrectas($idRespIncorrectas, $data['respIncorrectasFromUser']);
+		$data['titulo'] = "Evaluación del cuestionario";
+
+		$this->load->library('email');
+		$datos['correctas'] = $data['numCorrectas'];
+		$datos['incorrectas'] = $data['numIncorrectas'];
+		$this->email->from('contacto@huguidugui.com');
+		$this->email->to($emailCandidato);
+		//$this->email->cc('ringhugos@gmail.com');
+		$this->email->cc($correoAdmin);
+		$this->email->subject('Feedback de tu test');
+		$enviar = $this->load->view('templates/mails/feedback', $datos, TRUE);
+		$this->email->message($enviar);
+		$this->email->set_mailtype("html");
+		$this->email->send();
+
+
+		$this->load->view('headfoot2/header', $data);
+		$this->load->view('templates/evaluado');
+		$this->load->view('headfoot2/footer');
+	}
+
+
 } //Fin Cuestionarios

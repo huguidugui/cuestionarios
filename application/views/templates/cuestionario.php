@@ -14,7 +14,7 @@
 
     <div class="row">
       <div class="col-md-12">
-        <form id="listarPreguntas" action="<?php echo base_url();?>preguntas/evaluar" method="post" role="form">
+        <form id="listarPreguntas" action="<?php echo base_url();?>cuestionarios/evaluar" method="post" role="form">
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">

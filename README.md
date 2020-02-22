@@ -23,3 +23,6 @@ Mostrar los cuestionarios para elegir:
 Mostrar las preguntas del cuestionario:
 ![Mostrar las preguntas](screenshots/mostrar_preguntas.png)
 
+Validar preguntas contestastadas antes de enviar a calificar el cuestionario
+![Validar preguntas](screenshots/validar_preguntas.png)
+
